@@ -1,0 +1,83 @@
+/*
+█████╗
+██╔══██╗
+███████║
+██╔══██║
+██║  ██║
+╚═╝  ╚═╝
+Believe in yourself ,( try and try and then try ), You can do it 💗
+*/
+/*
+You don't have to be great to start but you have to start to be great 💗💗
+*/
+#include "bits/stdc++.h"
+using namespace std ;
+
+void cin_array_usual(int o[] , int size)
+{
+    for (int i = 0 ; i < size ; i++)
+    {
+        cin >> o[i] ;
+    }
+}
+void print_array_usual(int o[] , int size)
+{
+    for (int i = 0 ; i < size ; i++)
+    {
+        cout << o[i] << " " ;
+    }
+    cout << endl ;
+}
+void print_forward_list(forward_list<int>o)
+{
+    for (auto i = o.begin() ; i != o.end() ; i++)
+    {
+        cout << *i << " " ;
+    }
+    cout << endl ;
+}
+void print_set(set<int>o)
+{
+    for (auto i = o.begin() ; i != o.end() ; i++)
+    {
+        cout << *i << " " ;
+    }
+    cout << endl ;
+}
+void print_vector(vector<int>o)
+{
+    for (int i = 0 ; i < o.size() ; i++)
+    {
+        cout << o[i] << " " ;
+    }
+    cout << endl ;
+}
+int main()
+{
+    int n ;
+    cin >> n ;
+    int a[n] ;
+    for (int i = 0 ; i < n ; i++)
+    {
+        a[i] = i+1 ;
+    }
+    int output = 2 ;
+    int j = 2 ;
+    for (int i = 0 ; i < n-1 ; i++)
+    {
+        if (output-1 >= n)
+        {
+            output = output-n ;
+        }
+        cout << a[output-1] << " " ;
+        output += j ;
+        j++ ;
+    }
+    cout << endl ;
+    return 0 ;
+}
+/*
+👍&&👍&&👍&&👍
+||||||||||||||
+👊&&👊&&👊&&👊
+*/
